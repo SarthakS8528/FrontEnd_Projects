@@ -1,0 +1,70 @@
+*{
+     margin: 0px; 
+    padding: 0px;
+    text-align: center;
+    /* poore document ko text align centre kardiya to make our work easier */
+}
+
+h1{
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+    /* centre par laane ke liye jitna height hai utna hi line height dedo */
+}
+
+/* Now let's move towards choice */
+.choice {
+height: 165px;
+width: 165px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.choice:hover{
+cursor: pointer;
+background-color: #081b31;
+}
+/* Matlab jitna div ka height and width kiya hai utna hi img ka kardo unko fit karne ke liye */
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* Now to make the images in a horizontal line we will use display flex */
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+#user-score,#comp-score
+{
+    font-size: 4rem;
+}
+
+.msg-container
+{
+    margin-top: 4rem;
+}
+#msg{
+    margin-top: 5rem;
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
